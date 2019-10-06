@@ -21,7 +21,7 @@ class beritacontroller extends Controller
             //$KategoriArtikel=KategoriArtikel::where('id',$id)->first(); //select * from kategori_artikel where id=$id limit 1
             $Berita=Berita::find($id);
 
-            return view ( 'berita.show' ,compact ( 'listBerita'));
+            return view ( 'berita.show' ,compact ( 'Berita'));
         }
 
         

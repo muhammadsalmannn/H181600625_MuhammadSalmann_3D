@@ -21,7 +21,7 @@ class kategorigalericontroller extends Controller
             //$KategoriArtikel=KategoriArtikel::where('id',$id)->first(); //select * from kategori_artikel where id=$id limit 1
             $KategoriGaleri=KategoriGaleri::find($id);
 
-            return view ( 'kategori_galeri.show' ,compact ( 'listKategoriGaleri'));
+            return view ( 'kategori_galeri.show' ,compact ( 'KategoriGaleri'));
         }
 
         public function create (){

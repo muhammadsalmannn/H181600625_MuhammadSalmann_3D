@@ -21,7 +21,7 @@ class artikelcontroller extends Controller
             //$KategoriArtikel=KategoriArtikel::where('id',$id)->first(); //select * from kategori_artikel where id=$id limit 1
             $Artikel=Artikel::find($id);
 
-            return view ( 'artikel.show' ,compact ( 'listArtikel'));
+            return view ( 'artikel.show' ,compact ( 'Artikel'));
         }
 
         

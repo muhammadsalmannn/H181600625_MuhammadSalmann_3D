@@ -21,6 +21,6 @@ class pengumumancontroller extends Controller
             //$KategoriArtikel=KategoriArtikel::where('id',$id)->first(); //select * from kategori_artikel where id=$id limit 1
             $Pengumuman=Pengumuman::find($id);
 
-            return view ( 'pengumuman.show' ,compact ( 'listPengumuman'));
+            return view ( 'pengumuman.show' ,compact ( 'Pengumuman'));
         }
 }

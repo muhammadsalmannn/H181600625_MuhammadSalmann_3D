@@ -21,7 +21,7 @@ class kategoripengumumancontroller extends Controller
             //$KategoriArtikel=KategoriArtikel::where('id',$id)->first(); //select * from kategori_artikel where id=$id limit 1
             $KategoriPengumuman=KategoriPengumuman::find($id);
 
-            return view ( 'kategori_pengumuman.show' ,compact ( 'listKategoriPengumuman'));
+            return view ( 'kategori_pengumuman.show' ,compact ( 'KategoriPengumuman'));
         }
 
         public function create (){

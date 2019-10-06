@@ -20,7 +20,7 @@ class kategoriberitacontroller extends Controller
             //$KategoriArtikel=KategoriArtikel::where('id',$id)->first(); //select * from kategori_artikel where id=$id limit 1
             $KategoriBerita=KategoriBerita::find($id);
 
-            return view ( 'kategori_berita.show' ,compact ( 'listKategoriBerita'));
+            return view ( 'kategori_berita.show' ,compact ( 'KategoriBerita'));
         }
 
         public function create (){
